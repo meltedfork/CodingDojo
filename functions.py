@@ -1,4 +1,5 @@
 '''
+ODD/EVEN
 def odd_even(num):
     count = 1
     print count, num
@@ -11,6 +12,7 @@ def odd_even(num):
             count += 1
 #odd_even(2000)
 
+MULTIPLY
 family = [2,4,10,16]
 def multiply(family, num):
     new_gen = []
@@ -20,6 +22,7 @@ def multiply(family, num):
     print new_gen
 #multiply(family, 5)
 
+MULTIPLY v.2
 a = [2,4,10,16]
 def multiply(a, num):
     new_a = []
@@ -29,32 +32,38 @@ def multiply(a, num):
 b = multiply(a, 5)
 print b, 'b'
 '''
-def layered_multiples(arr):
-    #arr = multiply(a, num): this doesnt work
-    print arr
-    
+#HACKER
 def multiply(a, num):
-    #creating new array to hold list * num results
-    new_array = []
+    print a, num
+    arr = []
     for parts in a:
+        arr.append(parts * num)
+    return arr 
+
+def layered_multiples(arr):
+    print arr
+    new_array = []
+    i = 0
+    while i < 3:
+        new_array.append(arr[i] * '1')
+        i += 1    
+    print new_array
+
+x = layered_multiples(multiply([2,4,5],3))
+    
+    
+'''
+    for parts in arr:
         #multiplying each number in list by num
         #storing results in new array
-        new_array.append(parts * num)
+        new_array.append(len.arr[0], 1)
         #print new_array
-    return new_array
-        #new_array expected result [6,12,15]
-    multiply([2,4,5],3) #:ran inner function seperately to check for errors
-#x = layered_multiples(multiply([2,4,5],3))
-#print x
+    print new_array
+
+    
+     
+    x = layered_multiples(multiply([2,4,5],3))
+    print x
 # expected output
 #[[1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]]
-'''
-def func_1():
-    name = input('What is your name?')
-    return name
-def func_2():
-    user_input = func_1()
-    print(user_input)
-
-func_2()
 '''
