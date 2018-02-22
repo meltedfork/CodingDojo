@@ -1,0 +1,14 @@
+<html>
+
+<head>
+    <title>What's My Name?</title>
+</head>
+
+<body>
+    <form action='/process' method='post'>
+        Your Name:
+        <input type='text' name='name' onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }">
+    </form>
+</body>
+
+</html>
