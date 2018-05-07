@@ -1,6 +1,6 @@
 # Multiples: Part 1
-# range from 1-1000; using modulo to find odd numbers; print odd numberd
-'''
+# range from 1-1000; using modulo to find odd numbers; print odd numbers
+
 for number in range(1, 1000):
     if number % 2 != 0:
         print number
@@ -15,7 +15,7 @@ for fiver in range(5, 1000000):
 # sum the list and print result
 numbers = [1, 2, 5, 10, 255, 3]       
 print sum(numbers)
-'''
+
 # Average List
 # sum list then divide by list length; print result
 numbers = [1, 2, 5, 10, 255, 3]

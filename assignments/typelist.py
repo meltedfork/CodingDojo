@@ -16,15 +16,16 @@ l = ['magical unicorns',19,'hello',98.98,'world']
 "Sum: 117.98"
 '''
 my_list = ['magical unicorns',19,'hello',98.98,'world']
-new_list = []
+new_string = ""
 sum = 0
 strcounter = 0
 floatcounter = 0
 intcounter = 0
 for element in my_list:
     if isinstance(element, str):
+        element += " "
         strcounter += 1
-        new_list.append(element)
+        new_string += element
         #print strcounter, "is # of strings"
     elif isinstance(element, float):   
         floatcounter += 1
@@ -36,4 +37,4 @@ for element in my_list:
         #print element, "is a number"   
 if strcounter > 0 and floatcounter + intcounter > 0:
     print "The list you entered is of mixed type"    
-print "String is:", new_list, "Sum is:", sum
+print "String is:", new_string, "Sum is:", sum
